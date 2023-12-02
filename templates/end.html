@@ -24,15 +24,19 @@
         {%if result <= 150%}
         <img class="rez__img" src="../../static/img/planet_good.svg" alt="">
         <span>Ваш результат {{result}} кВт⋅ч</span>
-        <span>Ваш дом имеет отличную энергоэффективности!</span>
+        <span>Ваш дом имеет отличную энергоэффективность!</span>
         {%elif result >= 151 and result < 300%}
         <img class="rez__img" src="../../static/img/planet_medium.svg" alt="">
         <span>Ваш результат {{result}} кВт⋅ч</span>
-        <span>Ваш дом имеет среднюю энергоэффективности!</span>
+        <span>Ваш дом имеет среднюю энергоэффективность!</span>
         {%elif result >= 300%}
         <img class="rez__img" src="../../static/img/planet_bad.svg" alt="">
         <span>Ваш результат {{result}} кВт⋅ч</span>
-        <span>Ваш дом имеет плохую энергоэффективности!</span>
+        <span>Ваш дом имеет плохую энергоэффективность!</span>
+       
+        <span>Хотите помочь экологии? Заполните форму и мы соберем вам экологичную сборку!</span>
+        <a class="main_link" href="{{ url_for('form') }}">Форма</a>
+       
         {%endif%}
     </div>
     {% endblock %}
