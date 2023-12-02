@@ -51,7 +51,6 @@ def form():
 def submit_form():
     #Создай переменные для сбора информации
     name = request.form['name']
-    print(name)
 
     # здесь вы можете сохранить данные или отправить их по электронной почте
     return render_template('form_result.html', 
